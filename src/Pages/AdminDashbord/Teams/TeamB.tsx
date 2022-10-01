@@ -5,7 +5,7 @@ const TeamB = () => {
     const [teamA, setTeamA] = useState([])
     const [team, setTeam]: any = useState([]);
     useEffect(() => {
-        const url = 'https://limitless-ridge-02858.herokuapp.com/teams';
+        const url = 'https://take-your-smile-server.onrender.com/teams';
         fetch(url)
             .then(res => res.json())
             .then(data => {

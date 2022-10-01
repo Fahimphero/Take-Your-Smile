@@ -31,7 +31,7 @@ const EventPost = () => {
                         decImg: img,
                     };
                     // send to your database
-                    fetch("https://limitless-ridge-02858.herokuapp.com/gallerys", {
+                    fetch("https://take-your-smile-server.onrender.com/gallerys", {
                         method: "POST",
                         headers: {
                             "content-type": "application/json",

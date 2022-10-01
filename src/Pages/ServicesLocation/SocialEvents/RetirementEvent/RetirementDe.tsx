@@ -31,7 +31,7 @@ const RetirementDe = () => {
   const [decoration, setDecoration] = useState<decration[]>([]);
 
   useEffect(() => {
-    const url = "https://limitless-ridge-02858.herokuapp.com/retirement";
+    const url = "https://take-your-smile-server.onrender.com/retirement";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setDecoration(data));

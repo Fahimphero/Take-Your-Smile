@@ -28,7 +28,7 @@ const CheckoutForm = ({ paymentData }) => {
 
   useEffect(() => {
     const email = user?.email
-    const url = `https://limitless-ridge-02858.herokuapp.com/myitems?email=${email}`;
+    const url = `https://take-your-smile-server.onrender.com/myitems?email=${email}`;
     fetch(url)
       .then(res => res.json())
       .then(data => {
@@ -89,7 +89,7 @@ const CheckoutForm = ({ paymentData }) => {
   useEffect(() => {
     if (amount) {
       fetch(
-        "https://limitless-ridge-02858.herokuapp.com/create-payment-intent",
+        "https://take-your-smile-server.onrender.com/create-payment-intent",
         {
           method: "POST",
           headers: {
@@ -164,7 +164,7 @@ const CheckoutForm = ({ paymentData }) => {
     } else {
       const status = "paid"
       const update = { status }
-      const url = `https://limitless-ridge-02858.herokuapp.com/orders/paid/${paymentData._id}`
+      const url = `https://take-your-smile-server.onrender.com/orders/paid/${paymentData._id}`
       fetch(url, {
         method: 'PUT',
         headers: {

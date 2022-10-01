@@ -20,7 +20,7 @@ const SeasonalDe = () => {
   const [packag]: any = UsePackage(pack);
   console.log(packag);
   useEffect(() => {
-    const url = "https://limitless-ridge-02858.herokuapp.com/seasonal";
+    const url = "https://take-your-smile-server.onrender.com/seasonal";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setDecoration(data));

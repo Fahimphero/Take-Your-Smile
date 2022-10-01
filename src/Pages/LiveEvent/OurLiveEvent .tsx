@@ -15,7 +15,7 @@ const OurLiveEvent = () => {
   time.setSeconds(time.getSeconds() + 210000);
   const [liveEvent, setLiveEvent]: any = useState([]);
   useEffect(() => {
-    const url = `https://limitless-ridge-02858.herokuapp.com/orders`;
+    const url = `https://take-your-smile-server.onrender.com/orders`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setLiveEvent(data));

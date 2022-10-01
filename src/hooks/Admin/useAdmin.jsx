@@ -5,7 +5,7 @@ const useAdmin = user => {
     useEffect(() => {
         const email = user?.email;
         if (email) {
-            fetch(`https://limitless-ridge-02858.herokuapp.com/admin/${email}`, {
+            fetch(`https://take-your-smile-server.onrender.com/admin/${email}`, {
                 methodd: "GET",
                 headers: {
                     'content-type': 'application/json',

@@ -14,7 +14,7 @@ const useAdminToken = (user: any, role: any) => {
         }
 
         if (email) {
-            fetch(`https://limitless-ridge-02858.herokuapp.com/admin/${email}`, {
+            fetch(`https://take-your-smile-server.onrender.com/admin/${email}`, {
                 method: "PUT",
                 headers: {
                     'content-type': 'application/json'

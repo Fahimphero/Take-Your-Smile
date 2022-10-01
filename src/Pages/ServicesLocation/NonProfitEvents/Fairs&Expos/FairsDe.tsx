@@ -19,7 +19,7 @@ const FairsDe = () => {
   const [packag]: any = UsePackage(pack);
   const navigate = useNavigate();
   useEffect(() => {
-    const url = "https://limitless-ridge-02858.herokuapp.com/fairsExpos";
+    const url = "https://take-your-smile-server.onrender.com/fairsExpos";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setDecoration(data));

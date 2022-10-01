@@ -17,7 +17,7 @@ const Modal = () => {
     setModal(true)
   }, [])
   const { isLoading, isError, data: sponsors, error } = useQuery(['sponsor'], () =>
-    fetch('https://limitless-ridge-02858.herokuapp.com/sponsor', {
+    fetch('https://take-your-smile-server.onrender.com/sponsor', {
       method: "GET",
       headers: {
         'content-type': "applicataion/json"

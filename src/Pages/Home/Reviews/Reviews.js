@@ -10,7 +10,7 @@ import Loading from "../../shared/Loading/Loading";
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    const url = "https://limitless-ridge-02858.herokuapp.com/reviews";
+    const url = "https://take-your-smile-server.onrender.com/reviews";
 
     fetch(url)
       .then((res) => res.json())

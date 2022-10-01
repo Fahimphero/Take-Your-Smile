@@ -12,7 +12,7 @@ const WeddingGallery = () => {
   // const [loading, setLoading] = useState(false);
   useEffect(() => {
 
-    fetch("https://limitless-ridge-02858.herokuapp.com/gallerys")
+    fetch("https://take-your-smile-server.onrender.com/gallerys")
       .then((res) => res.json())
       .then((data) => {
         setGallery(data);

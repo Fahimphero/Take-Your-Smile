@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const UseConcert = (con: any) => {
   const [concert, setConcert] = useState([]);
   useEffect(() => {
-    const url = `https://limitless-ridge-02858.herokuapp.com/concert/${con}`;
+    const url = `https://take-your-smile-server.onrender.com/concert/${con}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setConcert(data));

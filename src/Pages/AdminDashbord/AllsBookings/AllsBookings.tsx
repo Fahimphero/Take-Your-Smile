@@ -5,7 +5,7 @@ import PageTitle from '../../shared/PageTitle/PageTitle';
 import Card from './Card';
 const AllsBookings = () => {
 
-    const url = `https://limitless-ridge-02858.herokuapp.com/allbookings`;
+    const url = `https://take-your-smile-server.onrender.com/allbookings`;
     const { data: bookings, isLoading, refetch } = useQuery(['allBooking'], () => fetch(url, {
         method: 'GET',
         headers: {

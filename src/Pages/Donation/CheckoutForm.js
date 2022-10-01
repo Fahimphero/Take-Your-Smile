@@ -30,7 +30,7 @@ const CheckoutForm = () => {
   useEffect(() => {
     if (amount) {
       fetch(
-        "https://limitless-ridge-02858.herokuapp.com/create-payment-intent",
+        "https://take-your-smile-server.onrender.com/create-payment-intent",
         {
           method: "POST",
           headers: {

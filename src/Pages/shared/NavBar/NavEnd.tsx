@@ -14,7 +14,7 @@ const NavEnd = () => {
   const [users, userLoading]: any = useUser(user);
   const email = user?.email;
   const { isLoading, error, data, refetch } = useQuery(['data'], () =>
-    fetch(`https://limitless-ridge-02858.herokuapp.com/user/${email}`, {
+    fetch(`https://take-your-smile-server.onrender.com/user/${email}`, {
       method: "GET",
       headers: {
         'content-type': 'application/json',

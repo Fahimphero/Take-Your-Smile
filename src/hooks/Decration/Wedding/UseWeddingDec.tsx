@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const UseWeddingDec = (wedd: any) => {
   const [weddings, setWedding] = useState([]);
   useEffect(() => {
-    const url = `https://limitless-ridge-02858.herokuapp.com/weddingceremony/${wedd}`;
+    const url = `https://take-your-smile-server.onrender.com/weddingceremony/${wedd}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setWedding(data));

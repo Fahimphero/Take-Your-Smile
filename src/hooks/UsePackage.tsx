@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const UsePackage = (pack) => {
   const [packag, setPackage] = useState([]);
   useEffect(() => {
-    const url = `https://limitless-ridge-02858.herokuapp.com/package/${pack}`;
+    const url = `https://take-your-smile-server.onrender.com/package/${pack}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setPackage(data));

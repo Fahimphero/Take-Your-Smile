@@ -4,7 +4,7 @@ const UseWedding = () => {
   const [wedding, setWedding] = useState([]);
 
   useEffect(() => {
-    const url = "https://limitless-ridge-02858.herokuapp.com/wedding";
+    const url = "https://take-your-smile-server.onrender.com/wedding";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setWedding(data));

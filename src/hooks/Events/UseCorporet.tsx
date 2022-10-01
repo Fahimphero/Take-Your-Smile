@@ -4,7 +4,7 @@ const UseCorporet = (id: any) => {
   const [corporate, setCorporate] = useState([]);
 
   useEffect(() => {
-    const url = `https://limitless-ridge-02858.herokuapp.com/corporate/${id}`;
+    const url = `https://take-your-smile-server.onrender.com/corporate/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setCorporate(data));

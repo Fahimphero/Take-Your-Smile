@@ -7,7 +7,7 @@ const Profile = () => {
   const [users, setUser] = useState([]);
   useEffect(() => {
     const email = user?.email;
-    fetch(`https://limitless-ridge-02858.herokuapp.com/user/${email}`, {
+    fetch(`https://take-your-smile-server.onrender.com/user/${email}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

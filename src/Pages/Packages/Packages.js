@@ -6,7 +6,7 @@ import "./Package.css";
 const Packages = () => {
   const [packages, setPackages] = useState([]);
   useEffect(() => {
-    const url = "https://limitless-ridge-02858.herokuapp.com/package";
+    const url = "https://take-your-smile-server.onrender.com/package";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setPackages(data));

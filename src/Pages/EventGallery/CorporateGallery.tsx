@@ -13,7 +13,7 @@ const CorporateGallery = () => {
   const [gallery, setGallery] = useState([]);
   const [events, setEvents] = useState([]);
   useEffect(() => {
-    fetch("https://limitless-ridge-02858.herokuapp.com/gallerys")
+    fetch("https://take-your-smile-server.onrender.com/gallerys")
       .then((res) => res.json())
       .then((data) => {
         setGallery(data);

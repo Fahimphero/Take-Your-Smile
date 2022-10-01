@@ -18,7 +18,7 @@ const useToken = (user: any) => {
         }
 
         if (email) {
-            fetch(`https://limitless-ridge-02858.herokuapp.com/user/${email}`, {
+            fetch(`https://take-your-smile-server.onrender.com/user/${email}`, {
                 method: "PUT",
                 headers: {
                     'content-type': 'application/json'

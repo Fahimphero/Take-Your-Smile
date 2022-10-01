@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const useComments = () => {
 
-    const url = `https://limitless-ridge-02858.herokuapp.com/postComments`
+    const url = `https://take-your-smile-server.onrender.com/postComments`
 
     const [comments, setComments] = useState([])
 

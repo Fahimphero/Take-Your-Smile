@@ -9,7 +9,7 @@ const Blogs = () => {
 
   let { id } = useParams();
   const { isLoading, isError, data: articles, error, refetch } = useQuery(['articles'], () =>
-    fetch(`https://limitless-ridge-02858.herokuapp.com/articles/${id}`, {
+    fetch(`https://take-your-smile-server.onrender.com/articles/${id}`, {
       method: "GET",
       headers: {
         'content-type': "applicataion/json"

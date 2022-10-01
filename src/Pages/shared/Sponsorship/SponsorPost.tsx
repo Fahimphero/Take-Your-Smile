@@ -14,7 +14,7 @@ const SponsorPost = () => {
         const image = data.url;
         const description = data.description;
         const sponsor = { title, image, description };
-        fetch(`https://limitless-ridge-02858.herokuapp.com/sponsor`, {
+        fetch(`https://take-your-smile-server.onrender.com/sponsor`, {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

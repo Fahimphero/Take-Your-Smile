@@ -15,7 +15,7 @@ const HolydayLoc = () => {
   const [social] = UseSocialEvents();
   const [address, setAddress] = useState([]);
   useEffect(() => {
-    const url = "https://limitless-ridge-02858.herokuapp.com/address";
+    const url = "https://take-your-smile-server.onrender.com/address";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setAddress(data));

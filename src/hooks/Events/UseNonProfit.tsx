@@ -4,7 +4,7 @@ const UseNonProfit = (id: any) => {
   const [nonProfit, setNonProfit] = useState([]);
 
   useEffect(() => {
-    const url = `https://limitless-ridge-02858.herokuapp.com/nonprofit/${id}`;
+    const url = `https://take-your-smile-server.onrender.com/nonprofit/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setNonProfit(data));

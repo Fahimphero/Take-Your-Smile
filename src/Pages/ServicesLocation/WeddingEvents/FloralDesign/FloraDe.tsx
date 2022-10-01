@@ -20,7 +20,7 @@ const FloraDe = () => {
   const { id } = useParams();
   const [address]: any = UseLocation(id);
   useEffect(() => {
-    const url = "https://limitless-ridge-02858.herokuapp.com/floralDesign";
+    const url = "https://take-your-smile-server.onrender.com/floralDesign";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setDecoration(data));

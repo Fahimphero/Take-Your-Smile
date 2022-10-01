@@ -17,7 +17,7 @@ const Profiles = () => {
         Get Profile info for display
   ========================================= */
   const { isLoading, error, data: details, refetch } = useQuery(['details'], () =>
-    fetch(`https://limitless-ridge-02858.herokuapp.com/user/${email}`, {
+    fetch(`https://take-your-smile-server.onrender.com/user/${email}`, {
       method: "GET",
       headers: {
         'content-type': 'application/json',
@@ -90,7 +90,7 @@ const Profiles = () => {
           }
 
           //send fata on database
-          fetch(`https://limitless-ridge-02858.herokuapp.com/user/${email}`, {
+          fetch(`https://take-your-smile-server.onrender.com/user/${email}`, {
             method: "PUT",
             headers: {
               'content-type': "application/json",

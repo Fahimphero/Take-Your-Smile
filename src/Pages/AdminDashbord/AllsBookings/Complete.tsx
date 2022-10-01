@@ -6,7 +6,7 @@ import Card from './Card';
 
 const Complete = () => {
     const [bookings, setBookings]: any = useState([]);
-    const url = `https://limitless-ridge-02858.herokuapp.com/allbookings`;
+    const url = `https://take-your-smile-server.onrender.com/allbookings`;
 
     useEffect(() => {
         fetch(url)

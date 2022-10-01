@@ -19,7 +19,7 @@ const RehearsalDecration = () => {
   const { pack } = useParams();
   const [packag]: any = UsePackage(pack);
   useEffect(() => {
-    const url = "https://limitless-ridge-02858.herokuapp.com/rehearshal";
+    const url = "https://take-your-smile-server.onrender.com/rehearshal";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setDecoration(data));

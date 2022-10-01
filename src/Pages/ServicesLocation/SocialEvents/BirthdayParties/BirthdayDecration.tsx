@@ -20,7 +20,7 @@ const BirthdayDecration = () => {
   const [packag]: any = UsePackage(pack);
   console.log(packag);
   useEffect(() => {
-    const url = "https://limitless-ridge-02858.herokuapp.com/birthday";
+    const url = "https://take-your-smile-server.onrender.com/birthday";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setDecoration(data));

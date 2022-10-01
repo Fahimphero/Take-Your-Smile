@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const UseCorporate = () => {
   const [corporate, setCorporat] = useState([]);
   useEffect(() => {
-    const url = "https://limitless-ridge-02858.herokuapp.com/corporate";
+    const url = "https://take-your-smile-server.onrender.com/corporate";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setCorporat(data));

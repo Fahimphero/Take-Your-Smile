@@ -57,7 +57,7 @@ const FashionFrom = () => {
       status: status
     };
 
-    fetch("https://limitless-ridge-02858.herokuapp.com/orders", {
+    fetch("https://take-your-smile-server.onrender.com/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",

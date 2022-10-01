@@ -15,7 +15,7 @@ export default function BlogPost() {
       body: body,
       image: image
     }
-    fetch('https://limitless-ridge-02858.herokuapp.com/articles', {
+    fetch('https://take-your-smile-server.onrender.com/articles', {
       method: "POST",
       headers: {
         'content-type': 'application/json'

@@ -20,7 +20,7 @@ const PaintJamDe = () => {
   const [packag]: any = UsePackage(pack);
   const navigate = useNavigate();
   useEffect(() => {
-    const url = "https://limitless-ridge-02858.herokuapp.com/PaintJam";
+    const url = "https://take-your-smile-server.onrender.com/PaintJam";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setDecoration(data));

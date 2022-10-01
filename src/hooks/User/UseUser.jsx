@@ -7,7 +7,7 @@ const useUser = user => {
 
         const email = user?.email;
         if (email) {
-            fetch(`https://limitless-ridge-02858.herokuapp.com/user/${email}`, {
+            fetch(`https://take-your-smile-server.onrender.com/user/${email}`, {
                 methodd: "GET",
                 headers: {
                     'content-type': 'application/json',

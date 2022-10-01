@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 const Alluser = () => {
   const [user, setUser] = useState([]);
   useEffect(() => {
-    fetch("https://limitless-ridge-02858.herokuapp.com/usersdata")
+    fetch("https://take-your-smile-server.onrender.com/usersdata")
       .then((res) => res.json())
       .then((data) => setUser(data));
   }, [user]);
@@ -13,7 +13,7 @@ const Alluser = () => {
   const handleDelete = (id: string) => {
     const proced = window.confirm("Are Your Sure Delete This User");
     if (proced) {
-      const url = `https://limitless-ridge-02858.herokuapp.com/usersData/${id}`;
+      const url = `https://take-your-smile-server.onrender.com/usersData/${id}`;
 
       fetch(url, {
         method: "DELETE",

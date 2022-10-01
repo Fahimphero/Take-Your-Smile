@@ -35,7 +35,7 @@ const YourBookings = () => {
     const orderNumber = Math.round(Math.random() * 100000)
     useEffect(() => {
         const email = user?.email
-        const url = `https://limitless-ridge-02858.herokuapp.com/myitems?email=${email}`;
+        const url = `https://take-your-smile-server.onrender.com/myitems?email=${email}`;
         fetch(url)
             .then(res => res.json())
             .then(data => filterItems(data))
@@ -59,7 +59,7 @@ const YourBookings = () => {
 
     const cancleOrder = (id) => {
 
-        fetch(`https://limitless-ridge-02858.herokuapp.com/orders/cancel/${id}`, {
+        fetch(`https://take-your-smile-server.onrender.com/orders/cancel/${id}`, {
             method: "PUT",
         })
             .then((res) => res.json())

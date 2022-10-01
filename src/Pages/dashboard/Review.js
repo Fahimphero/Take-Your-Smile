@@ -26,7 +26,7 @@ const Review = () => {
       img: user?.photoUrl,
     };
 
-    fetch("https://limitless-ridge-02858.herokuapp.com/reviews", {
+    fetch("https://take-your-smile-server.onrender.com/reviews", {
       method: "POST",
       headers: {
         "content-type": "application/json",

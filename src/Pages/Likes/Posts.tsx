@@ -52,7 +52,7 @@ const Posts = () => {
 
 
     useEffect(() => {
-        fetch('https://limitless-ridge-02858.herokuapp.com/posts')
+        fetch('https://take-your-smile-server.onrender.com/posts')
             .then(res => res.json())
             .then(data => setPosts(data));
     }, [posts])
@@ -74,9 +74,9 @@ const Posts = () => {
         console.log(update)
 
 
-        const url = `https://limitless-ridge-02858.herokuapp.com/comments/${postId}`
+        const url = `https://take-your-smile-server.onrender.com/comments/${postId}`
 
-        axios.post(`https://limitless-ridge-02858.herokuapp.com/comments/${postId}`, update)
+        axios.post(`https://take-your-smile-server.onrender.com/comments/${postId}`, update)
             .then(function (response) {
                 console.log(response);
                 toast.success('Comment Added Successfully')
@@ -94,7 +94,7 @@ const Posts = () => {
         console.log(id)
         setPostid(id)
 
-        const url = `https://limitless-ridge-02858.herokuapp.com/posts/${id}`
+        const url = `https://take-your-smile-server.onrender.com/posts/${id}`
 
         fetch(url)
             .then(res => res.json())
@@ -105,7 +105,7 @@ const Posts = () => {
             const visible = 'show';
             setShowComment(visible)
             const update = { showComment }
-            const url = `https://limitless-ridge-02858.herokuapp.com/allposts/${id}`
+            const url = `https://take-your-smile-server.onrender.com/allposts/${id}`
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -127,7 +127,7 @@ const Posts = () => {
             const visible = 'hidden';
             setShowComment(visible)
             const update = { showComment }
-            const url = `https://limitless-ridge-02858.herokuapp.com/allposts/${id}`
+            const url = `https://take-your-smile-server.onrender.com/allposts/${id}`
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -223,7 +223,7 @@ const Posts = () => {
             const update = { totalLikes, email, liked }
             console.log(update);
 
-            const url = `https://limitless-ridge-02858.herokuapp.com/posts/${id}`
+            const url = `https://take-your-smile-server.onrender.com/posts/${id}`
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -251,7 +251,7 @@ const Posts = () => {
             const update = { totalLikes, email, liked }
             console.log(update);
 
-            const url = `https://limitless-ridge-02858.herokuapp.com/posts/${id}`
+            const url = `https://take-your-smile-server.onrender.com/posts/${id}`
             fetch(url, {
                 method: 'PUT',
                 headers: {
