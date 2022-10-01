@@ -172,14 +172,14 @@ const HolydayFrom = () => {
                 <div className="lg:flex w-full">
                   <input
                     value={packag.title}
-                    {...register("package", { required: true })}
+                    {...register("package")}
                     className="border-rounded border-2 border-primary rounded-lg  lg:mr-2 my-3 input-md  w-full max-w-xs block "
                   />
 
                   <input
                     type="text"
                     value={address.Location}
-                    {...register("location", { required: true })}
+                    {...register("location")}
                     placeholder="Your Address"
                     className="border-rounded border-2 border-primary rounded-lg  lg:ml-2 my-3 input-md  w-full max-w-xs block "
                   />

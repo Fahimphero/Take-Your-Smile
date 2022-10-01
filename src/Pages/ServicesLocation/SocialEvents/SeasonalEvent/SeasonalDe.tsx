@@ -27,7 +27,7 @@ const SeasonalDe = () => {
   }, []);
 
   const handleClick = (item: any, pack: any, id: any) => {
-    navigate(`/Religious/${pack}/${id}/${item}`);
+    navigate(`/seasonal/${pack}/${id}/${item}`);
   };
   return (
     <>
