@@ -71,7 +71,7 @@ const Banner = () => {
                     <br />
                     <h1 className='text-2xl md:w-10/12 w-full leading-loose font-mono font-medium text-white'>{item.dis}</h1>
                     <div className='mt-4'>
-                      <button className='exploreBtn mr-10 mb-3 font-mono uppercase'>Loren More</button>
+                      <button className='exploreBtn mr-10 mb-3 font-mono uppercase'>Learn More</button>
                       <button className='donateBtn font-mono uppercase'><Link to={item.url}>Get Planning</Link></button>
                     </div>
                   </div>

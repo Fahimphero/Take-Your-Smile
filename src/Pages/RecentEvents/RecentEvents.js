@@ -87,7 +87,7 @@ export default class RecentEvents extends Component {
                 <div className="custom-display1 lg:h-80 h-20">
                   <p className="p-4     "> {book.description}</p>
                   <div className=" text-center">
-                    <button className="btn ">Learn More</button>
+                    <button className="learn-button">Learn More</button>
                   </div>
                 </div>
               </div>

@@ -94,6 +94,20 @@
 
 }
 
+.learn-button {
+    background-color: rgb(251 64 80);
+    padding: 9px 20px;
+    border: 3px solid rgb(251 64 80);
+    border-radius: 7px;
+    font-size: medium;
+}
+
+.learn-button:hover {
+    background-color: transparent;
+    border: 3px solid white;
+
+}
+
 
 
 
