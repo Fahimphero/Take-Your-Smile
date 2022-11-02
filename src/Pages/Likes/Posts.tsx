@@ -21,6 +21,7 @@ import ShareSocial from './ShareSocial';
 import './Posts.css'
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import { useQuery } from '@tanstack/react-query';
 
 interface UserData {
 
@@ -48,7 +49,7 @@ const Posts = () => {
     const [postId, setPostid] = useState('');
     // console.log(postId)
 
-    const [post, setPost]: any = useState({});
+    // const [post, setPost]: any = useState({});
 
 
     useEffect(() => {
@@ -80,6 +81,7 @@ const Posts = () => {
             .then(function (response) {
                 console.log(response);
                 toast.success('Comment Added Successfully')
+                refetch();
                 e.target.reset();
             })
 
@@ -88,17 +90,17 @@ const Posts = () => {
             });
     }
 
+    const { data: post, isLoading, refetch } = useQuery(['post'], () =>
+        fetch(`https://take-your-smile-server.onrender.com/posts/${postId}`).then(res =>
+            res.json()
+        )
+    )
 
-
+    refetch()
     const handleComments = (id) => {
         console.log(id)
         setPostid(id)
 
-        const url = `https://take-your-smile-server.onrender.com/posts/${id}`
-
-        fetch(url)
-            .then(res => res.json())
-            .then(data => setPost(data));
 
 
         if (showComment !== 'show') {
@@ -370,7 +372,7 @@ const Posts = () => {
                             </div>
 
                             <form className='p-0' style={{ alignItems: 'normal' }} onSubmit={handleCommentPost} action="">
-                                <p className='w-3/4'><input type="text" placeholder="Type your comment here" name='comment' className="input input-bordered w-full max-w-xs" /></p>
+                                <p className='w-3/4'><input style={{ backgroundColor: 'white', color: 'black' }} type="text" placeholder="Type your comment here" name='comment' className="input input-bordered w-full max-w-xs" /></p>
                                 <p className='text-right mt-2'>  <button type="submit" className=' py-3 px-2 rounded-md btn' style={{}}>POST</button></p>
 
                             </form>
