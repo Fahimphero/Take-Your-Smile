@@ -28,7 +28,7 @@ const Reviews = () => {
         data-aos-duration="2000"
         className="text-center text-xl text-secondary mt-36 font-semibold font-mono"
       >
-        Customers Reviews
+        Customer Reviews
       </h1>
 
       <h1

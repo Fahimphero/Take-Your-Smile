@@ -8,10 +8,10 @@ import { BsBookmarkHeart } from "react-icons/bs";
 const Busniess = () => {
   const Fade = require("react-reveal/Fade")
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden py-3">
       <Fade right duration={7000}>
         <h1 className="text-center font-mono text-2xl text-secondary mt-32 font-semibold">
-          Our Busniess Summery
+          Our Business Summery
         </h1>
       </Fade>
       <Fade left duration={7000}>

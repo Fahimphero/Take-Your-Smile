@@ -6,7 +6,7 @@ const Gallery = () => {
       <section className="overflow-hidden font-mono relative">
         <Fade left duration={5500}>
           <h1 className="text-2xl font-bold text-center mt-36 text-secondary">
-            A Story Behind a Pictures
+            Story Behind Pictures
           </h1>
         </Fade>
         <Fade right duration={5500}>

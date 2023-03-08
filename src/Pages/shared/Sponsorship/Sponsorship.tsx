@@ -50,7 +50,7 @@ const Sponsher = () => {
   return (
     <div className='relative w-full'>
       <Fade left duration={6500}>
-        <h1 className="md:text-[90px] text-4xl absolute -z-10 md:left-1/3 top-8 text-[#F7F7F7] text-center font-mono font-bold">Sponsorshif</h1>
+        <h1 className="md:text-[90px] text-4xl absolute -z-10 md:left-1/3 top-8 text-[#F7F7F7] text-center font-mono font-bold">Sponsorship</h1>
       </Fade>
       <div className='w-10/12 mx-auto font-mono mt-36'>
         <h1 className='text-xl text-secondary font-semibold text-center mb-2'>Featured Sponsors</h1>
@@ -95,7 +95,7 @@ const Sponsher = () => {
             }
           </div>
           <div className='md:w-56 w-5/12 mx-auto'>
-            <button className='w-full mx-auto bg-primary py-4 text-white px-3 font-mono text-xl rounded-lg'> Become a Sponser</button>
+            <button className='w-full mx-auto bg-primary py-4 text-white px-3 font-mono text-xl rounded-lg'> Become a Sponsor</button>
           </div>
 
         </Swiper>
