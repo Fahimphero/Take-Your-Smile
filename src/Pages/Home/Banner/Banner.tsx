@@ -65,11 +65,11 @@ const Banner = () => {
               <div className=" absolute top-2/4 left-40 h-24  flex justify-center items-center">
                 <Fade bottom duration={2000}>
                   <div className="">
-                    <h1 className="md:text-5xl font-bold font-mono text-white">
+                    <h1 className="lg:text-5xl text-2xl font-bold font-mono text-white">
                       {item.title}
                     </h1>
                     <br />
-                    <h1 className='text-2xl md:w-10/12 w-full leading-loose font-mono font-medium text-white'>{item.dis}</h1>
+                    <h1 className='text-2xl md:w-10/12 w-full leading-loose font-mono font-medium text-white hidden lg:block'>{item.dis}</h1>
                     <div className='mt-4'>
                       <button className='exploreBtn mr-10 mb-3 font-mono uppercase'>Learn More</button>
                       <button className='donateBtn font-mono uppercase'><Link to={item.url}>Get Planning</Link></button>
