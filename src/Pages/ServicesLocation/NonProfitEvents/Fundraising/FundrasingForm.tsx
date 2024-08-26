@@ -66,7 +66,7 @@ const FundrasingForm = () => {
       .then((data) => {
         if (data.success) {
           toast(
-            `Your Booking is set, ${formattedDate} at ${booking?.location}`
+            `Your Booking is set on ${formattedDate} in ${booking?.location}`
           );
         } else {
           toast.error(
