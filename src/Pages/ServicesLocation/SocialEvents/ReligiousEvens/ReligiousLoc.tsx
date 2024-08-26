@@ -67,7 +67,7 @@ const ReligiousLoc = () => {
         <div className="bg-white rounded-lg shadow-lg relative overflow-hidden w-6/12 mx-auto">
           <input
             type="text"
-            className=" border-none px-10 text-xl font-mono input py-10 w-full"
+            className=" border-none px-10 text-xl font-mono input py-10 w-full bg-white"
             value={filter}
             placeholder="Search Your Location"
             onChange={searchEvent.bind(this)}

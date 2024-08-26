@@ -10,10 +10,11 @@ export default class RecentEvents extends Component {
   };
 
   componentDidMount() {
-    fetch("https://take-your-smile-server.onrender.com/recentEvents")
+    fetch('/recentevents.json')
       .then((response) => response.json())
       .then((booksList) => {
         this.setState({ books: booksList });
+        console.log(this.setState)
       });
   }
 

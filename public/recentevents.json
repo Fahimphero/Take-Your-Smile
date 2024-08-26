@@ -1,0 +1,52 @@
+[
+
+    {
+        "status": "Social Event",
+        "address": "Khulna",
+        "img": "https://i.ibb.co/yXwZcv6/deco2.jpg",
+        "description": "Take Your Smile has been helping to organize successful weeding events since 2014 in New York and here you will get the services of a wedding planner and event coordination."
+    },
+    {
+        "status": "Weeding Event",
+        "address": "Dhaka",
+        "img": "https://i.ibb.co/pZ60FVt/deco3.jpg",
+        "description": "Take Your Smile has been helping to organize successful weeding events since 2014 in New York and here you will get the services of a wedding planner and event coordination."
+    },
+
+        {
+        "status": "Social Event",
+        "address": "Barisal",
+        "img": "https://i.ibb.co/bQ2mD3h/deco1.webp",
+        "description": "Take Your Smile has been helping to organize successful weeding events since 2014 in New York and here you will get the services of a wedding planner and event coordination."
+    },
+    {
+        "status": "Weeding Event",
+        "address": "Chittagong",
+        "img": "https://i.ibb.co/YD0TMZW/deco4.webp",
+        "description": "Take Your Smile has been helping to organize successful weeding events since 2014 in New York and here you will get the services of a wedding planner and event coordination."
+    },
+    {
+        "status": "Non Profit Event",
+        "address": "Rajshahi",
+        "img": "https://i.ibb.co/ydXDZ8V/deco5.jpg",
+        "description": "Take Your Smile has been helping to organize successful weeding events since 2014 in New York and here you will get the services of a wedding planner and event coordination."
+    },
+    {
+        "status": "Corporate Event",
+        "address": "Rajshahi",
+        "img": "https://i.ibb.co/Qm2Nv8b/deco6.jpg",
+        "description": "Take Your Smile has been helping to organize successful weeding events since 2014 in New York and here you will get the services of a wedding planner and event coordination."
+    },
+    {
+        "status": "Weeding Event",
+        "address": "Khulna",
+        "img": "https://i.ibb.co/K7DYZfS/deco7.webp",
+        "description": "Take Your Smile has been helping to organize successful weeding events since 2014 in New York and here you will get the services of a wedding planner and event coordination."
+    },
+    {
+        "status": "Weeding Event",
+        "address": "Rangpur",
+        "img": "https://i.ibb.co/1RKjwwX/deco8.jpg",
+        "description": "Take Your Smile has been helping to organize successful weeding events since 2014 in New York and here you will get the services of a wedding planner and event coordination."
+    }
+]

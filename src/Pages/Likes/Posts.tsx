@@ -329,7 +329,9 @@ const Posts = () => {
 
                                             </div>
 
-                                            <label data-aos="fade-up" data-aos-duration="1400" data-aos-easing="ease-in-sine" onClick={() => handleComments(post?._id)} htmlFor="my-modal-6" className="modal-button text-right underlineText cursor-pointer">  Show all comments</label>
+
+                                            <label data-aos="fade-up" data-aos-duration="1400" data-aos-easing="ease-in-sine" onClick={() => handleComments(post?._id)} htmlFor="my-modal-6" className="modal-button text-center underlineText cursor-pointer py-3 px-1 bg-[#FB4051] mt-5 rounded-lg">  Show all comments</label>
+
 
 
                                         </div>
