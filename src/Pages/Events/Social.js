@@ -125,13 +125,15 @@ const Social = () => {
         </div>
         <div className="w-3/4 pl-4 ">
           <h1 data-aos="zoom-out-left" data-aos-duration="2800"
-            className="text-2xl lg:text-4xl mb-5 text-secondary"
+            className="text-2xl lg:text-4xl mb-1 text-secondary"
             style={{ fontWeight: "600" }}
           >
-            SERVICES INCLUDE
+            <span className="text-[#fb4051]">S</span>ervices <span className="text-[#fb4051]">I</span>nclude (Choose Any)
+
           </h1>
+          <div className="h-1 w-1/3 bg-[#fb4051] mb-5 rounded-md"></div>
           {social.map((item) => (
-            <div key={item._id}>
+            <div className="text-lg" key={item._id}>
               <h1 data-aos="zoom-out-left" data-aos-duration="2400"
                 onClick={() => HandleBirthday(item._id)}
                 className="mb-2 font-mono cursor-pointer"
@@ -272,7 +274,7 @@ const Social = () => {
               data-aos-easing="gradient"
               data-aos-duration="2000"
               className="text-3xl text-neutral mb-7">
-              ADDITIONAL EVENTS WE PLAN INCLUDE:
+              Additional Events We Plan Include:
             </h1>
             <div className="text-xl text-neutral">
               <p data-aos="fade-down-left"
@@ -333,7 +335,7 @@ const Social = () => {
               Can’t find the answers you need? Get in touch!
             </p>
             <Link to="/contactus">
-              <button data-aos="fade-up"
+              <button data-aos="fade-up" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 data-aos-anchor-placement="bottom-bottom"
                 data-aos-duration="1500"
                 className="contact-button flex align-middle">

@@ -30,7 +30,9 @@ const NavEnd = () => {
   }
   refetch();
 
-
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
   const logout = () => {
     signOut(auth);
@@ -39,16 +41,16 @@ const NavEnd = () => {
 
   }
   const navigation = <>
-    <li className=' text-white  cursor-pointer'><Link to='/weddings'
-      className='transition-all duration-300 uppercase'> Weddings</Link></li>
+    <li className=' text-white  cursor-pointer'><Link onClick={scrollToTop} to='/weddings'
+      className='transition-all duration-300 uppercase'> Wedding</Link></li>
 
-    <li className=' text-white  cursor-pointer uppercase'><Link to='/social'
+    <li className=' text-white  cursor-pointer uppercase'><Link onClick={scrollToTop} to='/social'
       className='transition-all duration-300'> Social</Link></li>
 
-    <li className=' text-white cursor-pointer uppercase'><Link to='/articles' className='transition-all duration-300'>Article</Link></li>
+    <li className=' text-white cursor-pointer uppercase'><Link onClick={scrollToTop} to='/articles' className='transition-all duration-300'>Articles</Link></li>
 
 
-    <li className=' text-white  cursor-pointer uppercase'><Link to='/contactus'
+    <li className=' text-white  cursor-pointer uppercase'><Link onClick={scrollToTop} to='/contactus'
       className='transition-all duration-300'> Contact Us</Link></li>
     {user ? <li className=' text-white  cursor-pointer uppercase'>
 
@@ -70,23 +72,27 @@ const NavEnd = () => {
             {
               users?.role === "user" &&
               <>
-                <Link className="flex items-center px-3 py-3 cursor-pointer  text-secondary text-sm focus:outline-none hover:bg-primary hover:text-white" to="/favourites"> My Favorites</Link>
-                <Link className="flex items-center px-3 py-3 cursor-pointer text-secondary text-sm focus:outline-none hover:bg-primary hover:text-white" to="/profiles"> Profile </Link>
-                <Link className="flex items-center px-3 py-3 cursor-pointer text-secondary text-sm focus:outline-none hover:bg-primary hover:text-white" to="/yourbookings"> My Bookings</Link>
+                <Link onClick={scrollToTop} className="flex items-center px-3 py-3 cursor-pointer  text-secondary text-sm focus:outline-none hover:bg-primary hover:text-white" to="/favourites"> My Favourites</Link>
+                <Link onClick={scrollToTop} className="flex items-center px-3 py-3 cursor-pointer text-secondary text-sm focus:outline-none hover:bg-primary hover:text-white" to="/profiles"> Profile </Link>
+                <Link onClick={scrollToTop} className="flex items-center px-3 py-3 cursor-pointer text-secondary text-sm focus:outline-none hover:bg-primary hover:text-white" to="/yourbookings"> My Bookings</Link>
 
-                <Link className="flex items-center px-3 py-3 cursor-pointer text-secondary text-sm focus:outline-none hover:bg-primary hover:text-white" to="/availablejob">Apply for Employee</Link>
+                <Link onClick={scrollToTop} className="flex items-center px-3 py-3 cursor-pointer text-secondary text-sm focus:outline-none hover:bg-primary hover:text-white" to="/availablejob">Apply for Employee</Link>
               </>
             }
             {
-              admin?.role === "Admin" && <Link className="flex items-center px-3 py-3 cursor-pointer text-secondary text-sm focus:outline-none hover:bg-primary hover:text-white" to="/admin"> Admin DashBoard</Link>
+              admin?.role === "Admin" && <Link onClick={scrollToTop} className="flex items-center px-3 py-3 cursor-pointer text-secondary text-sm focus:outline-none hover:bg-primary hover:text-white" to="/admin"> Admin DashBoard</Link>
             }
-            <button className="flex w-full items-center px-3 py-3 cursor-pointer  text-secondary text-sm focus:outline-none hover:bg-primary hover:text-white" onClick={logout} >LOGOUT</button>
+            <button className="flex w-full items-center px-3 py-3 cursor-pointer  text-secondary text-sm focus:outline-none hover:bg-primary hover:text-white"
+              onClick={(e) => {
+                logout();
+                scrollToTop()
+              }} >LOGOUT</button>
           </div>
         </ul>
       </div>
       {/* end */}
 
-    </li> : <li className=' text-secondary  cursor-pointer uppercase'><Link to='/login'
+    </li> : <li className=' text-secondary  cursor-pointer uppercase'><Link onClick={scrollToTop} to='/login'
       className='transition-all duration-300 text-white'> Login</Link></li>}
 
 

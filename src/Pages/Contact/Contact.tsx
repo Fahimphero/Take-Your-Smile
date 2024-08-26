@@ -49,7 +49,7 @@ const Contact = () => {
             <h1
                 data-aos="flip-down"
                 data-aos-duration="3000"
-                className='text-3xl text-center mt-16 font-bold text-secondary uppercase'>Contact <span className="text-orange-600">Us</span>
+                className='text-3xl text-center mt-16 font-bold text-secondary '>Contact <span className="text-[#fb4051]">{" "} Us</span>
             </h1>
             {/* Contact Form */}
             <div
