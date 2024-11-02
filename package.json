@@ -25,7 +25,7 @@
     "daisyui": "^1.25.4",
     "date-fns": "^2.29.1",
     "dompurify": "^2.3.10",
-    "firebase": "^9.9.1",
+    "firebase": "^11.0.1",
     "framer-motion": "^6.5.1",
     "react": "^18.2.0",
     "react-animated-progress-bar": "^1.1.1",
