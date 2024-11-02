@@ -1,6 +1,19 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An Event Management & Planning website: [Take Your Smile](https://take-your-smile-32199.firebaseapp.com/).
+
+## Overview
+
+Take Your Smile is a dynamic and engaging full-stack website designed for event planning and management. It utilizes various technologies such as React.js, Firebase, TypeScript, JavaScript, Node.js, Express.js, MongoDB, Tailwind CSS, Framer Motion, React Animation, Rest API, and the Payment Gateway method (Stripe) to provide users with a comprehensive solution for organizing and managing various types of events.
+
+## Features
+
+Event Organization: Users can plan, organize, and manage different types of events, including conferences, workshops, weddings, or parties.
+Comprehensive Management System: The website offers a complete management system to streamline the process of organizing events from start to finish.
+Efficient Planning Tools: Users have access to efficient planning tools to create schedules, manage guest lists, and coordinate event logistics.
+Promotional Support: The platform provides promotional support to help users promote their events effectively and reach a wider audience.
+Secure Payment Gateway: Integrated payment gateway ensures secure transactions for event registrations and ticket sales.
+Responsive Design: Tailwind CSS and Framer Motion are used to create a responsive design that provides an optimal viewing experience across various devices
 
 ## Available Scripts
 
